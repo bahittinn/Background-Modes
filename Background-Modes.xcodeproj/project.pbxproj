@@ -13,6 +13,7 @@
 		6429F0FA2AB4DDD200348B39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6429F0F82AB4DDD200348B39 /* Main.storyboard */; };
 		6429F0FF2AB4DDD300348B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6429F0FE2AB4DDD300348B39 /* Assets.xcassets */; };
 		6429F1022AB4DDD300348B39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6429F1002AB4DDD300348B39 /* LaunchScreen.storyboard */; };
+		6429F10A2AB4DFCC00348B39 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6429F1092AB4DFCC00348B39 /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6429F0FE2AB4DDD300348B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6429F1012AB4DDD300348B39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6429F1032AB4DDD300348B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6429F1092AB4DFCC00348B39 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6429F0FE2AB4DDD300348B39 /* Assets.xcassets */,
 				6429F1002AB4DDD300348B39 /* LaunchScreen.storyboard */,
 				6429F1032AB4DDD300348B39 /* Info.plist */,
+				6429F1092AB4DFCC00348B39 /* music.mp3 */,
 			);
 			path = "Background-Modes";
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6429F10A2AB4DFCC00348B39 /* music.mp3 in Resources */,
 				6429F1022AB4DDD300348B39 /* LaunchScreen.storyboard in Resources */,
 				6429F0FF2AB4DDD300348B39 /* Assets.xcassets in Resources */,
 				6429F0FA2AB4DDD200348B39 /* Main.storyboard in Resources */,

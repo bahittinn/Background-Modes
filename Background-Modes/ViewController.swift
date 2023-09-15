@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func startButtonClicked(_ sender: UIButton) {
+    }
+    
+    @IBAction func stopButtonClicked(_ sender: UIButton) {
+    }
 }
 
