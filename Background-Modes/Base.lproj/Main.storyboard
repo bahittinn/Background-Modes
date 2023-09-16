@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u1e-FZ-l6L">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Audio Play-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Background_Modes" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,15 +61,82 @@
                             <constraint firstItem="eH5-aq-mn8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xfG-s7-5Hh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Audio Play" id="tJb-HL-ANm">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="z8W-Hx-qDS">
+                            <connections>
+                                <segue destination="JW3-px-w2R" kind="show" id="ZAy-ge-1sR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15" y="-27"/>
+            <point key="canvasLocation" x="941.22137404580144" y="-27.464788732394368"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Dbj-HL-fpp">
+            <objects>
+                <viewController id="JW3-px-w2R" customClass="SecondViewController" customModule="Background_Modes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lhj-ns-Ywf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0n-Bw-wfJ">
+                                <rect key="frame" x="10" y="123.00000000000001" width="373" height="44.666666666666671"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44.670000000000002" id="Ufx-wv-hS7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Create Notification">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                    <color key="baseBackgroundColor" systemColor="systemCyanColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="createNotification:" destination="JW3-px-w2R" eventType="touchUpInside" id="XKw-d0-vcw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="StI-jW-V2R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H0n-Bw-wfJ" firstAttribute="leading" secondItem="StI-jW-V2R" secondAttribute="leading" constant="10" id="PjG-Ca-LKD"/>
+                            <constraint firstItem="H0n-Bw-wfJ" firstAttribute="top" secondItem="StI-jW-V2R" secondAttribute="top" constant="20" id="UH9-Pq-KCr"/>
+                            <constraint firstItem="StI-jW-V2R" firstAttribute="trailing" secondItem="H0n-Bw-wfJ" secondAttribute="trailing" constant="10" id="kpv-ED-QpO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Udk-ab-ghS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1j-eT-KyE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="-29"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WM2-9A-7VH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u1e-FZ-l6L" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v7d-bC-3qb">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qbz-Aa-zB1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ah-fc-skm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.503816793893129" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
